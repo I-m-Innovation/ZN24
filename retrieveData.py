@@ -215,6 +215,21 @@ def read_plant_data(plant):
         pn = power_max
         udm_var2 = "l/s"
         folder = "San_Teodoro"
+    
+    elif plant == "CAN":
+
+        ftp.cwd('/dati/San_Teodoro')
+        plant_type = "Hydro"
+        power_max = 99.79
+        var2max = 110
+        var2media = 87
+        var2dev = np.sqrt(15 ** 2 + 15 ** 2)
+        var3media = 11.5
+        var3dev = 0.5 * np.sqrt(0.5 ** 2 + 0.5 ** 2)
+        var3max = 15
+        pn = power_max
+        udm_var2 = "l/s"
+        folder = "San_Teodoro"
 
     elif plant == "SCN":
 

@@ -55,7 +55,7 @@ def retrieve_data(plant, plant_state):
 
 def switch_plant():
 
-    plants = ["SA3", "TF", "ST", "PAR", "CST", "PG"]
+    plants = ["SA3", "TF", "ST", "PAR", "CST", "PG", "CAN"]
     n = len(plants)
 
     index_df = pd.read_csv('current index.csv')
@@ -69,7 +69,7 @@ def switch_plant():
 def set_template(plant):
 
     if (plant == "TF" or plant == "ST" or plant == "PAR" or plant == "SA3" or plant == "PG" or plant == "CST"
-            or plant == "SCN" or plant == "RUB"):
+            or plant == "SCN" or plant == "RUB" or plant == "CAN"):
         template = "mainPage.html"
 
     else:

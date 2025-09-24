@@ -166,6 +166,8 @@ def createProdPlot(Data):
 
     elif Plant == "RUB":
         Title = "Rubino"
+    elif Plant == "CAN":
+        Title = "Canaletta"
     else:
         Title = "San Teodoro"
 
